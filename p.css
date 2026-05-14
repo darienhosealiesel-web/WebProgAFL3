@@ -1,0 +1,176 @@
+
+.nav-btn {
+    background: #e6e6e6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.nav-btn:hover {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+
+.hero-img {
+    width: 20%;
+    height: 60%;
+    transition: 0.3s;
+}
+
+.hero-img:hover {
+    transform: scale(1.1);
+}
+
+
+.banner {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.banner h1 {
+    position: relative;
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 120px;
+
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 70px 120px;
+
+}
+
+.content-img {
+    width: 250px;
+    height: 350px;
+    padding: 13px;
+}
+
+.content-text h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.content-text p {
+    font-size: 20px;
+    
+    text-align: justify;
+}
+
+
+.footer {
+    background: #dcdcdc;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+.footer-box {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #444;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 400px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.3);
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fadeLeft {
+    animation: fadeLeft 1s ease forwards;
+}
+
+.animate-fadeRight {
+    animation: fadeRight 1s ease forwards;
+}

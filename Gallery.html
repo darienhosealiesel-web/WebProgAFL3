@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="p.css">
+</head>
+
+<body class="bg-[#d6d1e6] min-h-screen flex flex-col">
+    <nav id="navbar" class="fixed top-0 left-0 w-full bg-[#e5e5e5] shadow-md z-50 h-20">
+        <div class="flex justify-between items-center px-12 h-full">
+            <img src="assets/LogoTransparan.png" alt="Logo" class="h-20">
+
+            <div class="flex gap-3">
+                <a href="index.html" class="nav-btn">HOME</a>
+                <a href="About.html" class="nav-btn">ABOUT</a>
+                <a href="Hobbies.html" class="nav-btn">HOBBIES</a>
+                <a href="Gallery.html" class="nav-btn">GALLERY</a>
+            </div>
+        </div>
+    </nav>
+    <section class="flex-grow py-20 text-center text-black bg-[#d6d1e6]">
+
+        <div class="animate-fadeLeft">
+            <h1 class="text-[64px] font-extrabold pt-16 ">GALLERY</h1>
+            <p class="text-sm mb-10">LIFE IN SNAPSHOTS</p>
+        </div>
+
+
+        <div class="relative w-full max-w-[500px] mx-auto overflow-hidden">
+
+
+            <div id="carousel" class="flex transition-transform duration-500 pt-10">
+                <img src="assets/GambarAir.jpeg" class="carousel-item">
+                <img src="assets/GambarPasir.jpeg" class="carousel-item">
+                <img src="assets/GambarTravel.jpeg" class="carousel-item">
+                <img src="assets/GambarGunung.jpeg" class="carousel-item">
+                <img src="assets/ngadepbelakag.jpeg" class="carousel-item">
+                <img src="assets/GambarPantai.jpeg" class="carousel-item">
+                <img src="assets/GambarBunga.jpeg" class="carousel-item">
+            </div>
+
+        </div>
+
+
+        <div class="mt-6 flex justify-center items-center gap-6">
+
+            <button onclick="prevSlide()" class="text-2xl">⬅</button>
+
+            <div id="dots" class="flex gap-2">
+                <span class="dot active" onclick="goToSlide"></span>
+                <span class="dot" onclick="goToSlide"></span>
+                <span class="dot" onclick="goToSlide"></span>
+                <span class="dot" onclick="goToSlide"></span>
+                <span class="dot" onclick="goToSlide"></span>
+                <span class="dot" onclick="goToSlide"></span>
+                <span class="dot" onclick="goToSlide"></span>
+            </div>
+
+            <button onclick="nextSlide()" class="text-2xl">➡</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-box">
+            <h3>WORDS OF WISDOM</h3>
+            <p>
+                Believe You Can and You're Halfway There. - Theodore Roosevelt
+            </p>
+
+            <div class="flex gap-6 justify-center mt-4 flex-wrap">
+                <a href="https://www.instagram.com/darienliesel_/" target="_blank" class="footer-link">Instagram</a>
+                <a href="https://wa.me/628112888535" target="_blank" class="footer-link">WhatsApp</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=XBcJkvdkQRbWkbWQMkzMhvqMkMdkXNXbHJmdgdmTdTLWfhkHCfKlqfqbLZXrxTNpGmjXLLHBqkZQsHVl"
+                    class="footer-link">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script src="Style.js"></script>
+</body>
+
+</html>
